@@ -7,3 +7,9 @@ __pycache__/
 *.egg-info/
 *.duckdb
 *.db
+data/
+*.log
+.coverage
+htmlcov/
+dist/
+build/

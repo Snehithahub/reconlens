@@ -1,0 +1,16 @@
+.git
+.github
+.venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.ruff_cache
+.env
+.env.*
+!.env.example
+data
+*.duckdb
+*.duckdb.wal
+tests
+Dockerfile
+docker-compose.yml

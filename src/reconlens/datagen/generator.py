@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
-from datetime import date, datetime, timedelta
+from datetime import date, timedelta
 from typing import Any
 
 import numpy as np
@@ -241,7 +241,6 @@ def generate(cfg: GenConfig, recon: ReconConfig) -> GeneratedData:
     for sid, a in zip(debits["settlement_id"], debits["amount"], strict=True):
         net[sid] -= int(a)
     settle_date = {key_to_sid[k]: k[1] for k in keys}
-    settle_account = {key_to_sid[k]: k[0] for k in keys}
 
     # ---- settlement-level injections ---------------------------------------------------
     last = max(settle_date.values())
@@ -401,7 +400,7 @@ def generate(cfg: GenConfig, recon: ReconConfig) -> GeneratedData:
 
     order = sorted(range(len(bank_rows)), key=lambda i: (bank_rows[i]["date"], i))
     txn_id = {old: f"BNK{pos + 1:07d}" for pos, old in enumerate(order)}
-    balance = 25_000_000
+    balance = 2_500_000_000
     bank_out = []
     for old in order:
         r = bank_rows[old]

@@ -120,7 +120,8 @@ def load_gateway(raw: RawInput) -> pd.DataFrame:
     out["entity_type"] = _text(df["entity_type"]).str.lower()
     bad_type = ~out["entity_type"].isin(ENTITY_TYPES)
     if bad_type.any():
-        problems.append(f"entity_type must be one of {sorted(ENTITY_TYPES)}; bad rows {list(bad_type[bad_type].index[:5])}")
+        bad_rows = list(bad_type[bad_type].index[:5])
+        problems.append(f"entity_type must be one of {sorted(ENTITY_TYPES)}; bad rows {bad_rows}")
     if (out["entity_id"] == "").any():
         problems.append("entity_id is empty on some rows")
     dup = out["entity_id"].duplicated() & (out["entity_id"] != "")

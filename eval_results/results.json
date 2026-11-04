@@ -1,0 +1,452 @@
+[
+ {
+  "payments": 10000,
+  "seed": 7,
+  "llm": false,
+  "stress": false,
+  "rows": {
+   "payments": 10000,
+   "gateway_rows": 10438,
+   "settlements": 286,
+   "bank_rows": 511,
+   "ledger_rows": 13005
+  },
+  "runtime_s": {
+   "generate": 0.29,
+   "ingest": 0.12,
+   "reconcile": 0.33,
+   "ingest_plus_reconcile": 0.46
+  },
+  "auto_match_rate": 0.9328,
+  "settlement_auto_match_rate": 0.9559,
+  "match_quality": {
+   "match_edges": 272,
+   "false_match_edges": 0,
+   "false_match_rate": 0.0,
+   "auto_false_match_rate": 0.0,
+   "gold_edges": 272,
+   "gold_edges_recovered": 272
+  },
+  "detection": {
+   "duplicate_refund": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "gst_mismatch": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "mdr_overcharge": {
+    "tp": 20,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "merged_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "missing_settlement": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "narration_no_utr": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "order_paid_no_payment": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "payment_not_recorded": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "refund_without_order": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "rounding_difference": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "settlement_delayed": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "short_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "split_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  },
+  "narration": {
+   "by_variant": {
+    "standard": {
+     "n": 233,
+     "rule": 233,
+     "llm_assisted": 233
+    },
+    "fragment": {
+     "n": 12,
+     "rule": 12,
+     "llm_assisted": 12
+    },
+    "hard": {
+     "n": 8,
+     "rule": 0,
+     "llm_assisted": 0
+    }
+   },
+   "with_utr": 253,
+   "rule_extraction_rate": 0.9684,
+   "llm_assisted_extraction_rate": 0.9684
+  },
+  "narration_stats": {
+   "bank_credits": 337,
+   "gateway_credits": 266,
+   "rule_utr_found": 245,
+   "rule_utr_resolved": 245
+  }
+ },
+ {
+  "payments": 100000,
+  "seed": 7,
+  "llm": false,
+  "stress": false,
+  "rows": {
+   "payments": 100000,
+   "gateway_rows": 104380,
+   "settlements": 314,
+   "bank_rows": 553,
+   "ledger_rows": 130050
+  },
+  "runtime_s": {
+   "generate": 2.44,
+   "ingest": 0.95,
+   "reconcile": 1.89,
+   "ingest_plus_reconcile": 2.84
+  },
+  "auto_match_rate": 0.9324,
+  "settlement_auto_match_rate": 0.956,
+  "match_quality": {
+   "match_edges": 273,
+   "false_match_edges": 0,
+   "false_match_rate": 0.0,
+   "auto_false_match_rate": 0.0,
+   "gold_edges": 273,
+   "gold_edges_recovered": 273
+  },
+  "detection": {
+   "duplicate_refund": {
+    "tp": 50,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "gst_mismatch": {
+    "tp": 100,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "mdr_overcharge": {
+    "tp": 200,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "merged_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "missing_settlement": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "narration_no_utr": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "order_paid_no_payment": {
+    "tp": 50,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "payment_not_recorded": {
+    "tp": 100,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "refund_without_order": {
+    "tp": 30,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "rounding_difference": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "settlement_delayed": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "short_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "split_credit": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  },
+  "narration": {
+   "by_variant": {
+    "standard": {
+     "n": 235,
+     "rule": 235,
+     "llm_assisted": 235
+    },
+    "fragment": {
+     "n": 14,
+     "rule": 14,
+     "llm_assisted": 14
+    },
+    "hard": {
+     "n": 5,
+     "rule": 0,
+     "llm_assisted": 0
+    }
+   },
+   "with_utr": 254,
+   "rule_extraction_rate": 0.9803,
+   "llm_assisted_extraction_rate": 0.9803
+  },
+  "narration_stats": {
+   "bank_credits": 356,
+   "gateway_credits": 267,
+   "rule_utr_found": 249,
+   "rule_utr_resolved": 249
+  }
+ },
+ {
+  "payments": 10000,
+  "seed": 7,
+  "llm": false,
+  "stress": true,
+  "rows": {
+   "payments": 10000,
+   "gateway_rows": 10438,
+   "settlements": 563,
+   "bank_rows": 737,
+   "ledger_rows": 13005
+  },
+  "runtime_s": {
+   "generate": 0.26,
+   "ingest": 0.12,
+   "reconcile": 0.5,
+   "ingest_plus_reconcile": 0.63
+  },
+  "auto_match_rate": 0.9472,
+  "settlement_auto_match_rate": 0.9593,
+  "match_quality": {
+   "match_edges": 541,
+   "false_match_edges": 0,
+   "false_match_rate": 0.0,
+   "auto_false_match_rate": 0.0,
+   "gold_edges": 541,
+   "gold_edges_recovered": 541
+  },
+  "detection": {
+   "duplicate_refund": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "gst_mismatch": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "mdr_overcharge": {
+    "tp": 20,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "merged_credit": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "missing_settlement": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "narration_no_utr": {
+    "tp": 373,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "order_paid_no_payment": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "payment_not_recorded": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "refund_without_order": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "rounding_difference": {
+    "tp": 16,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "settlement_delayed": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "short_credit": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "split_credit": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  },
+  "narration": {
+   "by_variant": {
+    "hard": {
+     "n": 145,
+     "rule": 0,
+     "llm_assisted": 0
+    },
+    "standard": {
+     "n": 107,
+     "rule": 107,
+     "llm_assisted": 107
+    },
+    "fragment": {
+     "n": 39,
+     "rule": 39,
+     "llm_assisted": 39
+    }
+   },
+   "with_utr": 291,
+   "rule_extraction_rate": 0.5017,
+   "llm_assisted_extraction_rate": 0.5017
+  },
+  "narration_stats": {
+   "bank_credits": 593,
+   "gateway_credits": 530,
+   "rule_utr_found": 146,
+   "rule_utr_resolved": 146
+  }
+ }
+]
