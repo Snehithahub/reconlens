@@ -1,0 +1,27 @@
+# Matching tolerances and calendar used by the reconciliation engine.
+tolerances:
+  fee_paise: 1                  # per-payment slack for gateway rounding of the MDR fee
+  gst_paise: 1                  # per-payment slack for GST rounding
+  settlement_paise: 100         # settlement total vs bank credit (Rs 1.00) before it is a short/excess credit
+  credit_window_business_days: 3  # a bank credit may post up to N business days after settled_at
+  sla_grace_business_days: 1   # allowed lag beyond the contracted T+N before a settlement is "delayed"
+  missing_grace_business_days: 2  # settlements this close to the statement end are "in transit", not missing
+
+# A bank credit counts as gateway-related if its narration contains any of these.
+gateway_keywords: ["PAYFLOW", "PAY FLOW", "PFLW"]
+
+# Bank holidays (in addition to Sundays and the 2nd/4th Saturdays).
+# Illustrative national holidays for 2026; replace with your bank's published calendar.
+bank_holidays:
+  - 2026-01-26
+  - 2026-03-04
+  - 2026-03-20
+  - 2026-04-03
+  - 2026-04-14
+  - 2026-05-01
+  - 2026-08-15
+  - 2026-08-26
+  - 2026-10-02
+  - 2026-10-20
+  - 2026-11-09
+  - 2026-12-25

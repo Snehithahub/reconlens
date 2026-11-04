@@ -1,0 +1,26 @@
+# Contracted pricing with the (fictional) PayFlow gateway.
+# Edit this file to match your own agreement. Rates are percentages of the
+# gross payment amount; fees are rounded half-up to the paise.
+gateway: PayFlow
+gst_rate_percent: 18
+methods:
+  upi:
+    percent: 1.00
+    flat_paise: 0
+    min_fee_paise: 0
+    settlement_days: 1
+  card:
+    percent: 1.95
+    flat_paise: 0
+    min_fee_paise: 0
+    settlement_days: 2
+  netbanking:
+    percent: 1.90
+    flat_paise: 0
+    min_fee_paise: 500
+    settlement_days: 2
+  wallet:
+    percent: 2.10
+    flat_paise: 0
+    min_fee_paise: 0
+    settlement_days: 2
